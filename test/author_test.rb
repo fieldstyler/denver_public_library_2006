@@ -22,7 +22,6 @@ class AuthorTest < Minitest::Test
     assert_equal Book, jane_eyre.class
     assert_equal "Jane Eyre", jane_eyre.title
     villette = charlotte_bronte.write("Villette", "1853")
-    require "pry"; binding.pry
     assert_equal "Villette", villette.title
     assert_equal [jane_eyre, villette], charlotte_bronte.books
   end
