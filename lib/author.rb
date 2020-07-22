@@ -7,4 +7,21 @@ class Author
     @books  = []
   end
 
+  def write(book_name, publication_date)
+    book = Book.new(
+                    {
+                      author: self.name,
+                      title: book_name,
+                      publication_date: publication_date
+                    }
+                  )
+    # add_book(book)
+    # This changes the class from Book to Array. Why?
+    # require "pry"; binding.pry
+  end
+
+  def add_book(book)
+    @books << book
+  end
+
 end
