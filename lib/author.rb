@@ -16,8 +16,7 @@ class Author
                     }
                   )
     # add_book(book)
-    # This changes the class from Book to Array. Why?
-    # require "pry"; binding.pry
+    # This ^^ changes the class from Book to Array. Why?
   end
 
   def add_book(book)
