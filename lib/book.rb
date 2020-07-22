@@ -6,7 +6,7 @@ class Book
   def initialize(book_info)
     @author = "#{book_info[:author_first_name]} #{book_info[:author_last_name]}"
     @title  = book_info[:title]
-    @publication_year = book_info[:publication_date].split(', ')[1]
+    @publication_year = book_info[:publication_date].split(', ')[1] || book_info[:publication_date]
   end
 
 end
