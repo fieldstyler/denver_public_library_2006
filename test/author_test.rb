@@ -16,4 +16,8 @@ class AuthorTest < Minitest::Test
     assert_equal [], charlotte_bronte.books
   end
 
+  def test_author_can_write_a_book
+
+  end 
+
 end
