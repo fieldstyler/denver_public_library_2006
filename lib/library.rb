@@ -14,7 +14,7 @@ class Library
   end
 
   def publication_time_frame_for(author)
-    # require "pry"; binding.pry
+    # Can't check if works because Author won't add books
     time_frame_hash = {
                       :start => authors.map do |author|
                         author.books.publication_year
